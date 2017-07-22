@@ -189,9 +189,9 @@ var DockerMachine = {
 
     var logsPath = null;
     if (process.env.MACHINE_STORAGE_PATH) {
-      logsPath = path.join(process.env.MACHINE_STORAGE_PATH, 'machines', machineName, machineName, 'Logs', 'VBox.log');
+      logsPath = path.join(process.env.MACHINE_STORAGE_PATH, 'machines', machineName, 'Logs', 'VBox.log');
     } else {
-      logsPath = path.join(util.home(), '.docker', 'machine', 'machines', machineName, machineName, 'Logs', 'VBox.log');
+      logsPath = path.join(util.home(), '.docker', 'machine', 'machines', machineName, 'Logs', 'VBox.log');
     }
 
     let logData = null;
